@@ -18,3 +18,23 @@ import './styles.css';
 library.add(fas, far, fab) 
 
 dom.i2svg() 
+
+
+//Add task to general project
+document.getElementById('taskButton').addEventListener('click', addTask);
+
+//Get data from user after a successful sumbit and add card
+cardForm.addEventListener('submit', submitTask)
+
+
+//Select details for each task
+document.querySelectorAll('.details').forEach(button => {button.addEventListener('click', selectDetails)}) 
+
+
+
+//Add project
+document.getElementById('projectButton').addEventListener('click', addProject);
+
+
+
+console.log(localStorage)
